@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h3>Register</h3>
+        <input type="text" name="username" placeholder="Enter username" autofocus><br><br>
+        <input type="password" name="password" placeholder="Enter password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[@#%$^&*])(?=.*[0-9])[A-Za-z@$#%^&*0-9]{8,12}" title="password should contain uppercase,lowercase,special character and digits"><br><br>
+        <input type="tel" placeholder="PhoneNo"><br><br>
+        <label for="user"></label>
+        <input type="submit" name="user" id="user" value="signup" ><br><br> 
+        <label for="sign">Already have an account</label>
+        <input type="submit" name="sign" id="sign" value="login" formaction="./login.html">
+        <br><br><label for="pwd">Forgot password</label>
+        <input type="submit" name="sign" id="pwd" value="Forgot" formaction="./forgot.html">
+    </form>
+</body>
+</html>
